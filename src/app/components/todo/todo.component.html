@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Template • TodoMVC</title>
+    <link href="node_modules/todomvc-common/base.css" />
+    <link href="node_modules/todomvc-app-css/index.css" />
+  </head>
+  <body>
+    <section class="todoapp">
+      <app-todo-add></app-todo-add>
+      <!-- This section should be hidden by default and shown when there are todos -->
+      <section class="main">
+        <input id="toggle-all" class="toggle-all" type="checkbox" />
+        <label (click)="toggleAll()" for="toggle-all"
+          >Mark all as complete</label
+        >
+        <app-todos-list></app-todos-list>
+      </section>
+      <!-- This footer should hidden by default and shown when there are todos -->
+      <app-todo-footer></app-todo-footer>
+    </section>
+    <footer class="info">
+      <p>Double-click to edit a todo</p>
+      <p>
+        Created by
+        <a href="http://github.com/fromzerotoher0">Anderson Sanchez🦖</a>
+      </p>
+      <p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
+    </footer>
+  </body>
+</html>
